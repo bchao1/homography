@@ -19,8 +19,8 @@ def load_project_image(file_path, vs = None):
         return img
 
     h, w, _ = img.shape
-    new_h =  max(int(2 * max(vs[-1][0] - vs[0][0], vs[2][0] - vs[1][0])), h)
-    new_w =  max(int(2 * max(vs[1][1] - vs[0][1], vs[2][1] - vs[-1][1])), w)
+    new_h =  max(int(5 * max(vs[-1][0] - vs[0][0], vs[2][0] - vs[1][0])), h)
+    new_w =  max(int(5 * max(vs[1][1] - vs[0][1], vs[2][1] - vs[-1][1])), w)
 
     img = cv2.resize(img, (new_h, new_w))
     h, w, _ = img.shape
@@ -55,7 +55,7 @@ def project(canvas, img, us, vs):
     v = np.matmul(H, u)
     v[0] /= (v[-1] + 1e-10)
     v[1] /= (v[-1] + 1e-10)
-    v = np.round(v).astype(np.int)
+    v = v.astype(np.int)
     canvas[v[0], v[1], :] = img[u[0], u[1], :]
     return canvas
 
