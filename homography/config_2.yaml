@@ -6,6 +6,8 @@ project_images:
   - ../data/heman.jpg
   - ../data/success_kid.jpg
   - ../data/funny_kid.jpg
+  - ../data/nick.jpg
+  - ../data/cat3.jpg
 output_image: ../results/res_2.jpg
 coors:
   - top_left: 
@@ -80,3 +82,27 @@ coors:
     bottom_left:
       x: 324.34551738584 
       y: 297.3241516547969
+  - top_left: 
+      x: 368.05820590699625
+      y: 197.74046920821118
+    top_right:
+      x: 380.3611751152074 
+      y: 229.37667574361123
+    bottom_right:
+      x: 561.3905791788857
+      y: 190.12434541265188
+    bottom_left:
+      x: 557.2895894428152
+      y: 153.21543778801848
+  - top_left: 
+      x: 436.9833080226226
+      y: 378.5250576036867
+    top_right:
+      x: 445.3718448889821 
+      y: 402.1654796816088
+    bottom_right:
+      x: 578.8258404901551
+      y: 396.82731985756186
+    bottom_left:
+      x: 578.8258404901551
+      y: 368.9926293464601
