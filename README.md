@@ -6,10 +6,10 @@ The meme square with projection geometry.
 
 ## Usage
 The main algorithm is in `homography/main.py`. To process the images, you need to specify custom parameters in `homography/config.yaml` file:
-- `canvas_image`: file path of the background image
-- `project_images`: list file paths of the images to project onto the canvas
+- `canvas_image`: file path of the background canvas image
+- `project_images`: list of file paths of the images to project onto the canvas
 - `output_image`: file path of the output image
-- `coors`: a list of quadrilateral corners in canvas coordinates. Should be same length as `project_images`. Note that `x` is defined as the vertical axis, while `y` is the horizontal axis in the config file.
+- `coors`: a list of quadrilateral corners in canvas coordinates. Should be same length as `project_images`. Note that in the config file, `x` is defined as the vertical axis, while `y` is the horizontal axis.
 
 ```
 This pixel is (x, y) = (5, 2), following numpy's format of (h, w).
@@ -44,7 +44,7 @@ After modifying `config.yaml`, simply run:
 ```
 python3 main.py
 ```
-in `homography/`. You can also try out the demo provided.
+in `homography/`. You can also try out the demo `config.yaml` provided, using images in `data/`.
    
 ## How this works
 
