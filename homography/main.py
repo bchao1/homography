@@ -60,7 +60,7 @@ def project(canvas, img, us, vs):
     return canvas
 
 if __name__ == '__main__':
-    corners, configs = parse_configs('config_2.yaml')
+    corners, configs = parse_configs('config.yaml')
     canvas = np.array(Image.open(configs['canvas_image']))
     project_img_paths = configs['project_images']
     assert len(corners) >= len(project_img_paths)
