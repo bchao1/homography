@@ -24,20 +24,21 @@ This pixel is (x, y) = (5, 2), following numpy's format of (h, w).
 x (height)
 ```
 
-Referring to `homography/config.yaml`, four corners (in clockwise order) of the image `1.jpg` will be projected to the first entry of `coors`, which are four canvas coordinates:
+Referring to `homography/config.yaml`, four corners of the image `1.jpg`, starting from the origin in clockwise order, will be projected to the first entry of `coors`, which are four canvas coordinates:
 ```yaml
-- top_left: 
-    x: 296.3452162756598
-    y: 795.149285190616
-  top_right:
-    x: 49.88489736070392
-    y: 1194.9957844574778
-  bottom_right:
-    x: 346.23295454545456
-    y: 1197.9741568914956
-  bottom_left:
-    x: 460.90029325513194
-    y: 799.6168438416423
+coors:
+  - top_left: 
+      x: 296.3452162756598
+      y: 795.149285190616
+    top_right:
+      x: 49.88489736070392
+      y: 1194.9957844574778
+    bottom_right:
+      x: 346.23295454545456
+      y: 1197.9741568914956
+    bottom_left:
+      x: 460.90029325513194
+      y: 799.6168438416423
 ```
 
 After modifying `config.yaml`, simply run:
