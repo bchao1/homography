@@ -24,7 +24,7 @@ This pixel is (x, y) = (5, 2), following numpy's format of (h, w).
 x (height)
 ```
 
-Referring to `homography/config.yaml`, four corners of the image `1.jpg` will be projected to the first entry of `coors`, which are four canvas coordinates:
+Referring to `homography/config.yaml`, four corners (in clockwise order) of the image `1.jpg` will be projected to the first entry of `coors`, which are four canvas coordinates:
 ```yaml
 - top_left: 
     x: 296.3452162756598
@@ -44,7 +44,7 @@ After modifying `config.yaml`, simply run:
 ```
 python3 main.py
 ```
-in `homography/`.
+in `homography/`. You can also try out the demo provided.
    
 ## How this works
 
