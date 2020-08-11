@@ -12,7 +12,7 @@ The main algorithm is in `homography/main.py`. To process the images, you need t
 - `coors`: a list of quadrilateral corners in canvas coordinates. Should be same length as `project_images`. Note that in the config file, `x` is defined as the vertical axis, while `y` is the horizontal axis.
 
 ```
-This pixel is (x, y) = (5, 2), following numpy's format of (h, w).
+This pixel is (x, y) = (5, 2).
  __ __ __ __ __ __ __ y (width)
 |__|__|__|__|__|__   
 |__|__|__|__|__|__   
@@ -24,7 +24,7 @@ This pixel is (x, y) = (5, 2), following numpy's format of (h, w).
 x (height)
 ```
 
-Referring to `homography/config.yaml`, four corners of the image `1.jpg`, starting from the origin in clockwise order, will be projected to the first entry of `coors`, which are four canvas coordinates:
+Referring to `homography/config.yaml`, the four corners of image `1.jpg`, starting from top-left in clockwise order, will be projected to the first entry of `coors`, which are four canvas coordinates:
 ```yaml
 coors:
   - top_left: 
