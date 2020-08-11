@@ -74,4 +74,4 @@ Since we have 4 pairs of coordinate mappings, we can stack all 2 * 9 matrices in
 ```
 Ah = 0, subject to ||h|| = 1
 ```
-We solve **h** by performing [Singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) on **A**<sup>T</sup>**A**. **h** would be the eigenvector corresponding to the smallest eigenvalue.
+We solve **h** by performing [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) on **A**<sup>T</sup>**A**. **h** would be the eigenvector corresponding to the smallest eigenvalue.
